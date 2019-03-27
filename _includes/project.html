@@ -1,0 +1,24 @@
+<div class="projects">
+  <table>
+    {% assign projects = site.projects | reverse %}
+    {% for item in projects %}
+      <tr>
+        <td class="date">
+            {{ item.title }}
+        </td>
+        <td class="announcement">
+          {% if item.inline %}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {% else %}
+            <a class="news-title" href="{{ item.url | prepend: site.baseurl }}">{{ item.description }}</a>
+          {% endif %}
+        </td>
+        <td class="description">
+          {% if item.pdf %}
+            [<a href="{{ item.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

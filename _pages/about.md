@@ -1,23 +1,18 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Preston</strong> Culbertson
+description: pculbertson [at] stanford [dot] edu
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: #
 
 news: true
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a graduate student at Stanford, working in the <a href="https://msl.stanford.edu/">Multi-Robot Systems Lab</a> with <a href="http://stanford.edu/~schwager/">Prof. Mac Schwager</a>. I spend my summers as a visiting fellow at <a href="https://www.jpl.nasa.gov/">JPL</a>. You can find my CV <a href="{{ 'cv-culbertson.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank"> here</a>. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am interested in algorithms which enable teams of robots to learn about and modify their environment without centralization. This includes topics spanning (adaptive) control theory, online RL, and discrete optimization. I'm especially interested in fun applications like multi-robot manipulation and construction.
