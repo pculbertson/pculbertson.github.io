@@ -1,7 +1,7 @@
 {{ reference }}
 
 <!-- Checks if paper has a special status (e.g., "Accepted" or "Under Review"). -->
-{% assign lower_note = entry.note | downcase %}
+{% assign lower_note = entry.annotation | downcase %}
 {% if lower_note contains "accepted"  or lower_note contains "press" %}
   <i> Accepted. </i>
 {% elsif lower_note contains "under" %}

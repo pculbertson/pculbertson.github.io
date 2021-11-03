@@ -6,3 +6,25 @@ My primary research interests are <b>adaptive</b>
 and <b>learning-based control</b>, <b>manipulation and grasping</b>, and <b>multi-agent interaction
 and coordination</b> (especially without communication). <br><br>
 
+<h3> Publications </h3>
+{% assign papers_sorted = site.papers | sort: "date" | reverse %}
+{% for paper in papers_sorted %}
+	<div class="row justify-content-center my-3">
+		<div class="col-4 align-items-center my-auto">
+			<img class="img-fluid" src="{{paper.image}}" />
+		</div>
+		<div class="col-8 paper my-auto">
+    		<p><b>{{paper.title}}</b></p> 
+    		{{ paper.authors | markdownify }}
+    		<p> <i>{{paper.location}},</i> {{paper.date | date: "%Y"}}. <i><b> {{paper.note}} </b></i></p>
+    		<p> {% if paper.pdf %} [<a href="{{paper.pdf}}">PDF</a>]  {% endif %}
+    			{% if paper.website %} [<a href="{{paper.website}}">project page</a>] {% endif %}
+    			{% if paper.code %} [<a href="{{paper.code}}">code</a>] {% endif %}
+    			{% if paper.video %} [<a href="{{paper.video}}">video</a>] {% endif %} </p>
+
+    		<br>
+    		<p>{{paper.content}}</p>
+    	</div>
+
+    </div>
+{% endfor %}
