@@ -1,0 +1,44 @@
+{{ reference }}
+
+<!-- Checks if paper has a special status (e.g., "Accepted" or "Under Review"). -->
+{% assign lower_note = entry.note | downcase %}
+{% if lower_note contains "accepted"  or lower_note contains "press" %}
+  <i> Accepted. </i>
+{% elsif lower_note contains "under" %}
+  <i>Under Review.</i>
+{% endif %}
+
+<!-- Checks if code link included in 'extra' field of bibtex. -->
+{% if lower_note contains "code" %}
+  <!-- Takes URL, which is between "code: " and the next whitespace. -->
+  {% assign code_parsed = lower_note | split: "code: " %}
+  {% assign code_url = code_parsed[1] | split: " " %}
+  [<a href="{{code_url[0]}}">code</a>]
+{% endif %}
+
+<!-- Checks if external PDF link included in 'extra' field of bibtex. -->
+{% if lower_note contains "pdf" %}
+  {% assign pdf_parsed = lower_note | split: "pdf: " %}
+  {% assign pdf_url = pdf_parsed[1] | split: " " %}
+  [<a href="{{pdf_url[0]}}">pdf</a>]
+{% endif %}
+
+<!-- Checks if arxiv link included in 'extra' field of bibtex. -->
+{% if lower_note contains "arxiv" %}
+  {% assign arxiv_parsed = lower_note | split: "arxiv: " %}
+  {% assign arxiv_url = arxiv_parsed[1] | split: " " %}
+  [<a href="{{arxiv_url[0]}}">arxiv</a>]
+{% endif %}
+
+<!-- Checks if external project page included in 'extra' field of bibtex. -->
+{% if lower_note contains "website" %}
+  {% assign site_parsed = lower_note | split: "website: " %}
+  {% assign site_url = site_parsed[1] | split: " " %}
+  [<a href="{{site_url[0]}}">project page</a>]
+{% endif %}
+
+<!-- Links attached PDF, if applicable. -->
+{% if links.pdf %}
+  [<a href="{{links.pdf}}">pdf</a>]
+{% endif %}
+
