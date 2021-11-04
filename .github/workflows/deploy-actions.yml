@@ -1,0 +1,23 @@
+name: MSL Website - Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: [self-hosted]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build the site and copy content
+      id: jekyll-build
+      run: |
+        bundle install
+        bundle exec jekyll build
+        rsync -au _site/ /home/pculbert/afs-home/WWW/. --delete-after
+
