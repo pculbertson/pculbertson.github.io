@@ -17,7 +17,6 @@ jobs:
     - name: Build the site and copy content
       id: jekyll-build
       run: |
-        source ~/.bashrc
         bundle install
         rbenv rehash
         bundle exec jekyll build
