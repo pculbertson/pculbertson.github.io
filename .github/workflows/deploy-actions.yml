@@ -18,7 +18,7 @@ jobs:
       id: jekyll-build
       run: |
         bundle install
-        ruby -v
+        rbenv rehash
         bundle exec jekyll build
         rsync -au _site/ /home/pculbert/afs-home/WWW/. --delete-after
 
