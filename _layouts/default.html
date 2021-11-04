@@ -7,35 +7,35 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class="col-6 my-auto">
-          <p class="display-4"> Preston Culbertson </h1>
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 my-auto">
+          <p class="display-4"> Preston Culbertson </p>
           <h4> PhD Candidate in Mechanical Engineering, <br> Stanford University </h4>
           <h5> <a href="mailto:pculbertson@stanford.edu"> email </a> | <a href="./assets/pdf/culbertson_cv.pdf"> CV </a> | <a href="https://twitter.com/pdculbert"> twitter </a> | <a href="https://scholar.google.com/citations?user=-lUGgAQAAAAJ&hl=en"> google scholar </a> | <a href="https://github.com/pculbertson"> github </a> </h5>
 
-          <p> I'm a PhD student at Stanford University, working in the Multi-Robot Systems Lab with Prof. Mac Schwager, and supported by the NASA NSTGRO. I also had the pleasure to spend my summers with the multi-robot group at JPL. </p>
-          <p> Before Stanford, I graduated from Georgia Tech in 2016, where I led the solar car team and worked on multi-quadrotor lifting. Outside of research, I love to bake, read sci-fi, and wrangle my two cats, Harper and Huxley.</p>
+          {% include bio.html %}
         </div>
-
-        <div class="col-3 my-auto">
+        <div class="col-8 col-md-5 col-xl-3 my-auto py-4">
           <img class="img-fluid rounded" src="./assets/img/preston_culbertson.jpeg" 
             alt="Picture of Preston Culbertson."/>
         </div>
 
       </div>
 
-    <div class="row mt-4 justify-content-center">
-      
-      <div class="col-9">
-        {% include research.html %}
-      </div>
+      {% include divider.html %}
 
-    </div>  
+      {% include research.html %}
 
-    <div class="row mt-4 justify-content-center">
-      <div class="col-9">
-        {{content}}
-      </div>
-    </div>
+      {% include divider.html %}
+
+      {% include teaching.html %}
+
+      {% include divider.html %}
+
+      {% include social_impacts.html %}
+
+      {% include divider.html %}
+
+      {% include footer.html %}
 
     </div>
   </body>

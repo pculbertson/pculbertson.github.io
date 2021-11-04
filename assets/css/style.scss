@@ -3,6 +3,30 @@
 
 @import "{{ site.theme }}";
 
+body {
+	font-size: 1.1rem;
+}
+
 div.paper p {
 	margin-bottom: 0px;
+}
+
+div.research p{
+	margin-bottom: 1rem;
+}
+
+hr.dashed {
+    border-top: 2px dashed #999;
+}
+
+hr.dotted {
+    border-top: 2px dotted #999;
+}
+
+hr.solid {
+    border-top: 2px solid #999;
+}
+
+div.footer p{
+	font-size: 0.75rem;	
 }
