@@ -3,7 +3,7 @@ title: Multi-Robot Assembly Scheduling for the Lunar Crater Radio Telescope on t
 authors: "**Preston Culbertson**, [Saptarshi Bandyopadhyay](https://www-robotics.jpl.nasa.gov/people/Saptarshi_Bandyopadhyay/), [Ashish Goel](https://www-robotics.jpl.nasa.gov/people/Ashish_Goel/), [Patrick McGarey](https://www-robotics.jpl.nasa.gov/people/Patrick_McGarey/), and [Mac Schwager](https://web.stanford.edu/~schwager/)"
 date: 2022-02-01
 location: IEEE Aerospace Conference
-notes: Under Review.
+notes: Accepted.
 image: assets/img/lcrt-assembly.gif
 pdf: assets/pdf/culbertson2022a.pdf
 ---
