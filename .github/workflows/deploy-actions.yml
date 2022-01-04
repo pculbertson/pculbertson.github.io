@@ -17,6 +17,7 @@ jobs:
     - name: Build the site and copy content
       id: jekyll-build
       run: |
+	rbenv local 2.7.4
         bundle install
         rbenv rehash
         bundle exec jekyll build
