@@ -1,4 +1,4 @@
-name: MSL Website - Deploy
+name: Personal Website - Deploy
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
         bundle install
         rbenv rehash
         bundle exec jekyll build
-        rsync -au _site/ /home/pculbert/afs-home/WWW/. --delete-after
+        rsync -au _site/ /home/pculbert/public_html/. --delete-after
 
