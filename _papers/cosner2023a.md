@@ -3,7 +3,7 @@ title: Robust Safety under Stochastic Uncertainty with Discrete-Time Control Bar
 authors: "[Ryan K. Cosner](http://www.rkcosner.com/), **Preston Culbertson** , [Andrew J. Taylor](https://www.cms.caltech.edu/people/ajtaylor), and [Aaron D. Ames](http://ames.caltech.edu/)"
 date: 2023-02-03
 location: "Robotics: Science and Systems (RSS)"
-notes: Under Review.
+notes: Accepted.
 image: assets/img/stochastic_cbfs.png
 pdf: assets/pdf/cosner2023a.pdf
 highlight: true
