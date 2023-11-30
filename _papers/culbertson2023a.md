@@ -3,7 +3,7 @@ title: Input-to-State Stability in Probability
 authors: "**Preston Culbertson**, [Ryan K. Cosner](http://www.rkcosner.com/), [Maegan Tucker](https://maegantucker.com/), and [Aaron D. Ames](http://ames.caltech.edu/)"
 date: 2023-04-01
 location: "IEEE Conference on Decision and Control (CDC)"
-notes: Under Review.
+notes: Accepted.
 image: assets/img/issp.png
 pdf: assets/pdf/culbertson2023a.pdf
 ---

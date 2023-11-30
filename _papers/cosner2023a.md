@@ -1,6 +1,6 @@
 ---
 title: Robust Safety under Stochastic Uncertainty with Discrete-Time Control Barrier Functions
-authors: "[Ryan K. Cosner](http://www.rkcosner.com/), **Preston Culbertson** , [Andrew J. Taylor](https://www.cms.caltech.edu/people/ajtaylor), and [Aaron D. Ames](http://ames.caltech.edu/)"
+authors: "[Ryan K. Cosner](http://www.rkcosner.com/), **Preston Culbertson**, [Andrew J. Taylor](https://www.cms.caltech.edu/people/ajtaylor), and [Aaron D. Ames](http://ames.caltech.edu/)"
 date: 2023-02-03
 location: "Robotics: Science and Systems (RSS)"
 notes: Accepted.
