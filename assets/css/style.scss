@@ -12,6 +12,7 @@ footer {
 .gradient {
 	 background-image: linear-gradient(to right top, #ffffff, #fdfcff, #faf9ff, #f7f7ff, #f4f4ff, #f0f5ff, #ebf5ff, #e7f6ff, #e4f9fe, #e5fcfa, #e9fef5, #f0fff0);
 	min-height: 100vh; 
+  background-attachment: fixed;
 }
 
 .html {

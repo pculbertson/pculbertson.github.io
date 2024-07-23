@@ -1,0 +1,35 @@
+<div class="row">
+    <h3> Publications </h3>
+    <p> * denotes equal contribution. Representative papers are <mark>highlighted.</mark></p>
+</div>
+
+{% assign papers_sorted = site.papers | sort: "date" | reverse %}
+{% for paper in papers_sorted %}
+
+    {% if paper.highlight %}
+        {% assign highlight = "mark" %}
+    {% else %}
+        {% assign highlight = "" %}
+    {% endif %}
+
+    <div class="row justify-content-center py-4 {{highlight}}">
+
+        <div class="col-8 col-md-3 align-items-center my-auto py-4">
+            <img class="img-fluid" src="{{paper.image}}" />
+        </div>
+
+        <div class="col-10 col-md-9 paper my-auto">
+            <p><b>{{paper.title}}</b></p> 
+            {{ paper.authors | markdownify }}
+            <p> <i>{{paper.location}},</i> {{paper.date | date: "%Y"}}. <i><b> {{paper.notes}} </b></i><b><span class="text-danger">{{paper.awards}}</span></b></p>
+            <p> {% if paper.pdf %} [<a href="{{paper.pdf}}">PDF</a>]  {% endif %}
+                {% if paper.website %} [<a href="{{paper.website}}">project page</a>] {% endif %}
+                {% if paper.code %} [<a href="{{paper.code}}">code</a>] {% endif %}
+                {% if paper.video %} [<a href="{{paper.video}}">video</a>] {% endif %} </p>
+
+            <br>
+            <p>{{paper.content}}</p>
+        </div>
+
+    </div>
+{% endfor %}
