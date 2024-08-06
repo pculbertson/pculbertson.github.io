@@ -1,26 +1,40 @@
-name: Personal Website - Deploy
+name: Build and Deploy Jekyll Site
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
-
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Check out the repository
+      uses: actions/checkout@v3
 
-    - name: Build the site and copy content
-      id: jekyll-build
-      run: |
-        source ~/.bashrc
-        rbenv local 2.7.4
-        bundle install
-        rbenv rehash
-        bundle exec jekyll build
-        rsync -au _site/ /home/pculbert/public_html/. --delete-after
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
 
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install npm dependencies
+      run: npm install
+
+    - name: Build Sass
+      run: npm run build:css
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build --destination _site
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site
