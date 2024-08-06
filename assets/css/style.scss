@@ -63,7 +63,13 @@ footer {
 .subhead {
 	font-family: "EB Garamond", serif;
 	font-weight: 400;
-  @include font-size(1.5rem);
+  @include font-size(1.1rem);
+}
+
+@media (min-width: 500px) {
+  .subhead {
+    @include font-size(1.5rem);
+  }
 }
 
 // hack to fix some cursed line wrapping
@@ -120,7 +126,13 @@ a:not(:has(> img)):hover::after {
 }
 
 .links a {
-  @include font-size(1rem)
+  @include font-size(0.95rem);
+}
+
+@media (min-width: 500px){
+  .links a {
+    @include font-size(1rem)
+  }
 }
 
 @media(min-width: 768px){

@@ -16,16 +16,16 @@ layout: default
     </div>
     <hr />
     <div class="row justify-content-center links text-center my-2">
-        <div class="col-3">
+        <div class="col-auto">
             <a data-target="highlights" class="content-button">Highlights</a>
         </div>
-        <div class="col-3">
+        <div class="col-auto">
             <a data-target="publications" class="content-button">Publications</a>
         </div>
-        <div class="col-3">
+        <div class="col-auto">
             <a data-target="teaching" class="content-button">Teaching</a>
         </div>
-        <div class="col-3">
+        <div class="col-auto">
             <a data-target="social" class="content-button">Other</a>
         </div>
     </div>
