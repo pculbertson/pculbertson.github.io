@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<div class="col-6">
+<div class="col-10 col-lg-6">
     <div class="row justify-content-center my-2">
         <div class="col-12 bio">
             {% for page in site.pages %}
@@ -15,19 +15,27 @@ layout: default
         </div>
     </div>
     <hr />
-    <div class="row justify-content-center my-2">
+    <div class="row justify-content-center links text-center my-2">
+        <div class="col-3">
+            <a data-target="highlights" class="content-button">Highlights</a>
+        </div>
+        <div class="col-3">
+            <a data-target="publications" class="content-button">Publications</a>
+        </div>
+        <div class="col-3">
+            <a data-target="teaching" class="content-button">Teaching</a>
+        </div>
+        <div class="col-3">
+            <a data-target="social" class="content-button">Other</a>
+        </div>
+    </div>
+    <hr />
+    <div class="row justify-content-center">
         <div class="col-12">
-            <a id="highlights">Highlights</a>
-            <a id="publications">Publications</a>
-            <div id="content"> <p> Initial content. </p> </div>
+            <div id="highlights-container" class="content-section d-none"> {% include highlights.html %} </div>
+            <div id="publications-container" class="content-section d-none"> {% include publications.html %} </div>
+            <div id="teaching-container" class="content-section d-none"> {% include teaching.html %} </div>
+            <div id="social-container" class="content-section d-none"> {% include social_impacts.html %} </div>
         </div>
     </div>
 </div>
-
-<script>
-    document.getElementById('highlights').addEventListener('click', function() {
-        document.getElementById('content').innerHTML = "Highlights."
-    });
-    document.getElementById('publications').addEventListener('click', function() {
-        document.getElementById('content').innerHTML = `{% include publications.html %}`
-    });
