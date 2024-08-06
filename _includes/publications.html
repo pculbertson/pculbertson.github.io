@@ -1,0 +1,31 @@
+<div class="row pt-2">
+    <p> * denotes equal contribution.</p>
+</div>
+
+{% assign papers_sorted = site.papers | sort: "date" | reverse %}
+{% for paper in papers_sorted %}
+    <div class="row">
+        <hr />
+    </div>
+    <div class="row justify-content-center py-3">
+
+        <div class="col-8 col-md-4 align-items-center my-auto py-3">
+            <img class="img-fluid" src="{{paper.image}}" />
+        </div>
+
+        <div class="col-10 col-md-8 paper my-auto">
+            <p><b>{{paper.title}}</b></p> 
+            <div class="authors">{{ paper.authors | markdownify }}</div>
+            <p class="venue"> {% if paper.location %} <i>{{paper.location}},</i> {% endif %}{{paper.date | date: "%Y"}}. <i><b> {{paper.notes}} </b></i><b><span class="text-danger">{{paper.awards}}</span></b></p>
+            <p> {% if paper.pdf %} [<a href="{{paper.pdf}}">paper</a>]  {% endif %}
+                {% if paper.website %} [<a href="{{paper.website}}">project page</a>] {% endif %}
+                {% if paper.code %} [<a href="{{paper.code}}">code</a>] {% endif %}
+                {% if paper.video %} [<a href="{{paper.video}}">video</a>] {% endif %} </p>
+
+            <br>
+            <!-- <p>{{paper.content}}</p> -->
+        </div>
+
+    </div>
+
+{% endfor %}

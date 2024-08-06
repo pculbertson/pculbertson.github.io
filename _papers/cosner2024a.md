@@ -3,7 +3,6 @@ title: Generative Modeling of Residuals for Real-Time Risk-Sensitive Safety with
 authors: "[Ryan K. Cosner](http://www.rkcosner.com/), [Igor Sadalski](https://github.com/igor-sadalski), [Jana K. Woo](https://www.linkedin.com/in/janakwoo), **Preston Culbertson**, and [Aaron D. Ames](http://ames.caltech.edu/)"
 date: 2024-05-16
 location: "IEEE International Conference on Robotics and Automation (ICRA)"
-notes: Under Review.
 image: assets/img/cvae_drone.gif
 website: http://www.rkcosner.com/research/4-ICRA-GenerativeModeling/
 video: https://drive.google.com/file/d/1cWbQ8rvKEUbG7617Muvp86xPz6d6YM_n/preview
