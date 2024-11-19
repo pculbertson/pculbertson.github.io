@@ -26,8 +26,12 @@ layout: default
             <a data-target="teaching" class="content-button">Teaching</a>
         </div>
         <div class="col-auto">
-            <a data-target="social" class="content-button">Other</a>
+            <a data-target="join" class="content-button">Join</a>
         </div>
+        <div class="col-auto">
+            <a data-target="other" class="content-button">Other</a>
+        </div>
+        
     </div>
     <hr />
     <div class="row justify-content-center">
@@ -35,7 +39,8 @@ layout: default
             <div id="highlights-container" class="content-section d-none"> {% include highlights.html %} </div>
             <div id="publications-container" class="content-section d-none"> {% include publications.html %} </div>
             <div id="teaching-container" class="content-section d-none"> {% include teaching.html %} </div>
-            <div id="social-container" class="content-section d-none"> {% include social_impacts.html %} </div>
+            <div id="join-container" class="content-section d-none"> {% include join.html %} </div>
+            <div id="other-container" class="content-section d-none"> {% include other.html %} </div>
         </div>
     </div>
 </div>
