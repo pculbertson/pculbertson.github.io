@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Programmatically click "Other" button
+  document.getElementById('click-join-link').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+      document.querySelector('.content-button[data-target="join"]').click();
+      document.querySelector(".join-container").scrollIntoView();
+  });
+
   // Show default content (e.g., publications)
   document.getElementById('highlights-container').classList.remove('d-none');
   buttons[0].classList.add('active');
