@@ -63,7 +63,7 @@ footer {
 .subhead {
   font-family: "EB Garamond", serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 500px) {
@@ -78,7 +78,12 @@ footer {
 }
 @media (min-width: 1200px) {
   .subhead {
-    font-size: 1.25rem;
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .subhead {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -130,27 +135,47 @@ a:not(:has(> img)):hover::after {
 }
 
 .links a {
-  font-size: 0.95rem;
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .links a {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 500px) {
   .links a {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 768px) {
   .links a {
-    font-size: 1.25rem;
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .links a {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
   .links a {
-    font-size: 1rem;
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .links a {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1400px) {
   .links a {
-    font-size: 1.25rem;
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+@media (min-width: 1400px) and (min-width: 1200px) {
+  .links a {
+    font-size: 1.5rem;
   }
 }
 div.header p {
