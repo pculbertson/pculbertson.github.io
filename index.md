@@ -4,7 +4,7 @@
 
 layout: default
 ---
-<div class="col-10 col-lg-6">
+<div class="col-10 col-lg-8">
     <div class="row justify-content-center my-2">
         <div class="col-12 bio">
             {% for page in site.pages %}
@@ -16,19 +16,19 @@ layout: default
     </div>
     <hr />
     <div class="row justify-content-center links text-center my-2">
-        <div class="col-auto">
+        <div class="col-auto mx-auto">
             <a data-target="highlights" class="content-button">Highlights</a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto mx-auto">
             <a data-target="publications" class="content-button">Publications</a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto mx-auto">
             <a data-target="teaching" class="content-button">Teaching</a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto mx-auto">
             <a data-target="join" class="content-button">Join</a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto mx-auto">
             <a data-target="other" class="content-button">Other</a>
         </div>
         

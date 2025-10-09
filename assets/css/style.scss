@@ -63,7 +63,7 @@ footer {
 .subhead {
 	font-family: "EB Garamond", serif;
 	font-weight: 400;
-  @include font-size(1.1rem);
+  @include font-size(1.25rem);
 }
 
 @media (min-width: 500px) {
@@ -75,7 +75,7 @@ footer {
 // hack to fix some cursed line wrapping
 @media (min-width: 1200px) {
   .subhead {
-    @include font-size(1.25rem);
+    @include font-size(1.5rem);
   }
 }
 @media (min-width: 1400px) {
@@ -126,31 +126,31 @@ a:not(:has(> img)):hover::after {
 }
 
 .links a {
-  @include font-size(0.95rem);
+  @include font-size(1.5rem);
 }
 
 @media (min-width: 500px){
   .links a {
-    @include font-size(1rem)
+    @include font-size(1.25rem)
   }
 }
 
 @media(min-width: 768px){
 .links a {
 	// font-family: "Inter", sans-serif;
-	@include font-size(1.25rem);
+	@include font-size(1.5rem);
 }
 }
 
 @media (min-width: 1200px) {
   .links a {
-    @include font-size(1rem);
+    @include font-size(1.5rem);
   }
 }
 
 @media (min-width: 1400px) {
   .links a {
-    @include font-size(1.25rem);
+    @include font-size(1.5rem);
   }
 }
 
