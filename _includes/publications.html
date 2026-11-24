@@ -10,7 +10,7 @@
     <div class="row justify-content-center py-3">
 
         <div class="col-8 col-md-4 align-items-center my-auto py-3">
-            <img class="img-fluid" src="{{paper.image}}" />
+            {% if paper.image %}<img class="img-fluid" src="{{paper.image}}" />{% endif %}
         </div>
 
         <div class="col-10 col-md-8 paper my-auto">
