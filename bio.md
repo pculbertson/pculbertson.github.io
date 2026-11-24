@@ -4,4 +4,4 @@
 
 **I want to understand robustness in robot learning.** My work integrates *machine learning*, *numerical optimization*, and *control theory* to study how robots can remain reliable when models, sensors, or hardware are imperfect. The goal is to develop robotic systems that can manage uncertainty, adapt, and improvise when deployed in messy real-world environments.
     
-**Prospective students:** <mark>I'm looking for motivated PhD students to join my lab!</mark> Please see <a href="#join-container" id="click-join-link"> this note </a> for more information. 
+**Prospective students:** Please see <a href="#join-container" id="click-join-link"> this note </a> for more information. 
